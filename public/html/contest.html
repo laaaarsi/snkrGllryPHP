@@ -1,0 +1,488 @@
+<!DOCTYPE HTML>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/mainStylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
+    <title>snkrGllry - Contest</title>
+
+
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html"> <img src="../img/aperture.png" height="40" width="40"/></a>
+
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contest.html">Contest</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="caption">
+        <h1>snkrGllry</h1>
+        <p id="littleHeading">The best on Feet on the Web!</p>
+    </div>
+</header>
+
+<section class="contestBox">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+
+                <h2>Colorful like a rainbow</h2>
+
+                <figure>
+                    <img class="img-responsive center-block" src="../img/IMG_5087.JPG">
+
+                </figure>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 col-xs-12 contestVerticalBox">
+                <article>
+
+                    <h3>Join our Competition!</h3>
+
+
+                    <p>
+                        You only need to upload your best photo and you can be the lucky winner.
+                    </p>
+                    <p>
+                        In our current photo competition, we are looking for recordings that are colorful, lively and
+                        diverse.
+                    </p>
+                    <p>
+                        You do not have to be the best. Only better than the others.
+                        Compete your skills with other photgraphers and convince the Jury with your best pictures.
+                    </p>
+
+
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#filterNavbar">
+                    More Filter
+                </button>
+
+
+            </div>
+            <div class="collapse navbar-collapse" id="filterNavbar">
+                <ul class="nav navbar-nav navbar-right">
+
+
+                    <li><!-- Trigger the modal with a button -->
+
+
+                        <a href="#" data-toggle="modal" data-target="#uploadModal">Upload</a>
+
+                        <!-- Modal -->
+                        <div id="uploadModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg modal-sm">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Upload</h4>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="brandSelect">Brand</label>
+                                                <select class="form-control" id="brandSelect">
+                                                    <option>Nike</option>
+                                                    <option>Adidas</option>
+                                                    <option>Puma</option>
+                                                    <option>Asics</option>
+                                                    <option>Reebok</option>
+                                                    <option>Saucony</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="colorSelect">Color</label>
+                                                <select class="form-control" id="colorSelect">
+                                                    <option>Black</option>
+                                                    <option>White</option>
+                                                    <option>Red</option>
+                                                    <option>Yellow</option>
+                                                    <option>Orange</option>
+                                                    <option>Brown</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="styleSelect">Style</label>
+                                                <select class="form-control" id="styleSelect">
+                                                    <option>Running</option>
+                                                    <option>Basketball</option>
+                                                    <option>Tennis</option>
+                                                    <option>Retro</option>
+                                                    <option>Collap</option>
+                                                    <option>Vintage</option>
+                                                    <option>Skateboarding</option>
+                                                    <option>Fairtrade</option>
+                                                    <option>Vegan</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="materialSelect">Material</label>
+                                                <select class="form-control" id="materialSelect">
+                                                    <option>Suede</option>
+                                                    <option>Mesh</option>
+                                                    <option>Leather</option>
+                                                    <option>Synthetic</option>
+                                                    <option>Linen/Canvas</option>
+                                                    <option>Knit</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="shapeSelect">Shape</label>
+                                                <select class="form-control" id="shapeSelect">
+                                                    <option>low</option>
+                                                    <option>mid</option>
+                                                    <option>high</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="yearSelect">Year</label>
+                                                <select class="form-control" id="yearSelect">
+                                                    <option>2016</option>
+                                                    <option>2015</option>
+                                                    <option>2014</option>
+                                                    <option>2013</option>
+                                                    <option>2012</option>
+                                                    <option>2011</option>
+                                                    <option>2010</option>
+
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="descriptionTextarea">Description</label>
+                                                <textarea class="form-control" id="descriptionTextarea"
+                                                          rows="3"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputFile">File input</label>
+                                                <input type="file" class="form-control-file" id="exampleInputFile">
+                                            </div>
+
+                                            <button type="submit" class="btn">Submit</button>
+
+
+                                            <button type="button" class="btn" data-dismiss="modal">Close
+                                            </button>
+
+                                        </form>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#brand">Brand
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Adidas</a></li>
+                            <li><a href="#">Nike</a></li>
+                            <li><a href="#">Asics</a></li>
+                            <li><a href="#">Reebok</a></li>
+                            <li><a href="#">Jordan</a></li>
+                            <li><a href="#">Puma</a></li>
+                            <li><a href="#">New Balance</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Model
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Ultra Boost</a></li>
+                            <li><a href="#">Reebok Classic x Solebox Club C85</a></li>
+                            <li><a href="#">Nike Air Hyperadapt</a></li>
+                            <li><a href="#">Adidas Gazelle</a></li>
+                            <li><a href="#">Nike Free Flyknit</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Year</a></li>
+                            <li><a href="#">Styles</a></li>
+                            <li><a href="#">Materials</a></li>
+                            <li><a href="#">Shape</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Order by
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Date ascending</a></li>
+                            <li><a href="#">Date descending</a></li>
+                            <li><a href="#">Likes ascending</a></li>
+                            <li><a href="#">Likes descending</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<section>
+    <div class="container">
+
+        <div class="row rowBox">
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
+                <a href="viewPicByClick.html">
+                    <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
+                </a>
+                <div class="likeAndCommentBox">
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                    </a>
+                    <a href="viewPicByClick.html">
+                        <span class="glyphicon glyphicon-comment"></span>
+                    </a>
+                    <p>123 Likes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<footer class="footer-bottom">
+
+
+    <div class="navbar navbar-default nav-links navbar-static-bottom">
+        <div id="footer-bottom" class="container">
+            <ul class="nav navbar-nav footer-nav">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+</footer>
+
+
+</body>

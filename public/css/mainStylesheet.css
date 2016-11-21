@@ -1,0 +1,214 @@
+/*------------------------------------------------------------------------------------*/
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c7f0d5;
+    padding-top: 50px;
+    font-family: "Share Tech Mono";
+    height: 100%;
+    color: #5d5d5d;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Unica One";
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 28px;
+    margin-bottom: 0px;
+}
+
+.modal-content {
+    background-color: #8ee4c3;
+}
+
+#caption {
+    font-family: "Unica One";
+    padding-bottom: 3px;
+    background-color: #8ee4c3;
+    text-align: center;
+}
+
+#littleHeading {
+    font-size: larger;
+}
+
+/*Modal*/
+
+.modal-content {
+    background-color: #8ee4c3;
+}
+/*Navbar*/
+
+.navbar {
+    margin-bottom: 0px;
+    font-family: 'Unica One';
+    font-size: 18px;
+    background-color: #8ee4c3;
+
+}
+
+.navbar-brand {
+    margin-top: 0px;
+    padding-top: 5px;
+
+}
+
+/*Carousel*/
+
+.carousel {
+
+    margin-top: 20px;
+}
+
+.carousel .item img {
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*ROW CENTER*/
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
+
+
+.picBox {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.likeAndCommentBox {
+
+    margin-top: 10px;
+    text-align: center;
+}
+
+.rowBox {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.carouselBox {
+    padding-top: 12px;
+    padding-bottom: 28px;
+}
+
+.loginBox {
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.loginButtonBox {
+    margin-top: 22px;
+}
+
+.loginSectionBox {
+    margin-bottom: 20px;
+}
+
+.contestBox {
+
+    padding-bottom: 28px;
+}
+
+.newsBox {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.PicByClickBox {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.profileBox {
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+
+.aboutBox {
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+
+.titelbild {
+    margin-bottom: 20px;
+
+}
+
+.contestVerticalBox {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 990px) {
+    .contestVerticalBox {
+        margin-top: 0px;
+    }
+}
+
+/*Glyphicons*/
+
+span.glyphicon-comment, span.glyphicon-heart, span.glyphicon-thumbs-up, span.glyphicon-thumbs-down {
+    font-size: 2em;
+}
+
+/*Footer Styles*/
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.footer-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-nav > li {
+    float: none;
+    display: inline-block;
+
+}
+
+
+/*Button*/
+
+.btn {
+
+    background: transparent;
+    color: #5d5d5d;
+    border: solid;
+
+    /* CSS Transition */
+    -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -ms-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+
+}

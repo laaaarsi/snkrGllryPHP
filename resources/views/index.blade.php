@@ -164,43 +164,56 @@
                                         </div>
 
                                     </div>
-                        <li><a href="#">Puma</a></li>
-                        <li><a href="#">New Balance</a></li>
-                    </ul>
-                    </li>
+                                </div>
+                            </div>
+                        </li>
 
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Model
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Ultra Boost</a></li>
-                            <li><a href="#">Reebok Classic x Solebox Club C85</a></li>
-                            <li><a href="#">Nike Air Hyperadapt</a></li>
-                            <li><a href="#">Adidas Gazelle</a></li>
-                            <li><a href="#">Nike Free Flyknit</a></li>
-                        </ul>
-                    </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#brand">Brand
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Adidas</a></li>
+                                <li><a href="#">Nike</a></li>
+                                <li><a href="#">Asics</a></li>
+                                <li><a href="#">Reebok</a></li>
+                                <li><a href="#">Jordan</a></li>
+                                <li><a href="#">Puma</a></li>
+                                <li><a href="#">New Balance</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Year</a></li>
-                            <li><a href="#">Styles</a></li>
-                            <li><a href="#">Materials</a></li>
-                            <li><a href="#">Shape</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Order by
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Date ascending</a></li>
-                            <li><a href="#">Date descending</a></li>
-                            <li><a href="#">Likes ascending</a></li>
-                            <li><a href="#">Likes descending</a></li>
-                        </ul>
-                    </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Model
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Ultra Boost</a></li>
+                                <li><a href="#">Reebok Classic x Solebox Club C85</a></li>
+                                <li><a href="#">Nike Air Hyperadapt</a></li>
+                                <li><a href="#">Adidas Gazelle</a></li>
+                                <li><a href="#">Nike Free Flyknit</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Year</a></li>
+                                <li><a href="#">Styles</a></li>
+                                <li><a href="#">Materials</a></li>
+                                <li><a href="#">Shape</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Order by
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Date ascending</a></li>
+                                <li><a href="#">Date descending</a></li>
+                                <li><a href="#">Likes ascending</a></li>
+                                <li><a href="#">Likes descending</a></li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </div>
@@ -214,98 +227,98 @@
             <div class="row rowBox">
 
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
@@ -313,42 +326,42 @@
 
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
@@ -356,28 +369,28 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick">
+                    <a href="viewPicByClick.html">
                         <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
-                        <a href="/viewPicByClick">
+                        <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
                         <p>123 Likes</p>
@@ -386,5 +399,4 @@
             </div>
         </div>
     </section>
-
 @endsection

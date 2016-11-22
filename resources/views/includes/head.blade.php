@@ -17,7 +17,8 @@
 <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="../../CSS/mainStylesheet.css">
+<link rel="stylesheet" type="text/css" href="../../css/mainStylesheet.css">
+
 
 
 

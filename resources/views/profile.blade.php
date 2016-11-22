@@ -1,41 +1,72 @@
 @extends('layouts.default')
 
-
 @section('content')
-    <section class="carouselBox">
+
+    <section class="profileBox">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive" src="../img/carousel1.jpg" alt="First slide">
-                            </div>
 
-                            <div class="item">
-                                <img class="img-responsive src=" src="../img/carousel2.jpg" alt="Second slide">
 
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive" src="../img/carousel3.jpg" alt="Third slide">
-
-                            </div>
-                        </div>
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span></a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span></a>
-                    </div>
+                <div class="col-xs-12 titelbild">
+                    <figure>
+                        <a href="viewPicByClick.html">
+                            <img class="img-responsive" src="../img/titelbild.jpg">
+                        </a>
+                    </figure>
                 </div>
+
+
+                <div class="col-xs-12 col-sm-3">
+                    <figure>
+                        <img class="image-responsive" src="../img/profilPic.jpg" height="130" width="130"/>
+
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-9">
+
+                    <label for="username">Username: </label>
+                    <span id="username">laaaarsi</span><br>
+
+                    <label for="lastLogin">Registred since: </label>
+                    <span id="lastLogin">12.11.2016</span><br>
+
+                    <label for="location">Location: </label>
+                    <span id="location">Konstanz</span><br>
+
+                    <label for="instagram">Instagram: </label>
+                    <span id="instagram">laaaarsi</span><br>
+
+                    <label for="likes">Total likes: </label>
+                    <span id="likes">1000</span>
+
+                </div>
+
+
+                <article>
+                    <div class="col-xs-12">
+                        <h2>About me</h2>
+
+                        <p>Hi my name is Lars and I'm one of the creators of this website and a sneaker-enthusiast since
+                            2013.</p>
+                    </div>
+                </article>
+
+                <div class="col-xs-12">
+                    <h2>Shoes i own</h2>
+
+                    <ul>
+                        <li>Asics GLV Mint</li>
+                        <li>Nike AirMax</li>
+                        <li>Adidas ZX Flux</li>
+                        <li>Other</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
-    </section>
 
+    </section>
 
     <section>
         <nav class="navbar navbar-default">
@@ -164,43 +195,56 @@
                                         </div>
 
                                     </div>
-                        <li><a href="#">Puma</a></li>
-                        <li><a href="#">New Balance</a></li>
-                    </ul>
-                    </li>
+                                </div>
+                            </div>
+                        </li>
 
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Model
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Ultra Boost</a></li>
-                            <li><a href="#">Reebok Classic x Solebox Club C85</a></li>
-                            <li><a href="#">Nike Air Hyperadapt</a></li>
-                            <li><a href="#">Adidas Gazelle</a></li>
-                            <li><a href="#">Nike Free Flyknit</a></li>
-                        </ul>
-                    </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#brand">Brand
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Adidas</a></li>
+                                <li><a href="#">Nike</a></li>
+                                <li><a href="#">Asics</a></li>
+                                <li><a href="#">Reebok</a></li>
+                                <li><a href="#">Jordan</a></li>
+                                <li><a href="#">Puma</a></li>
+                                <li><a href="#">New Balance</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Year</a></li>
-                            <li><a href="#">Styles</a></li>
-                            <li><a href="#">Materials</a></li>
-                            <li><a href="#">Shape</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Order by
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Date ascending</a></li>
-                            <li><a href="#">Date descending</a></li>
-                            <li><a href="#">Likes ascending</a></li>
-                            <li><a href="#">Likes descending</a></li>
-                        </ul>
-                    </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Model
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Ultra Boost</a></li>
+                                <li><a href="#">Reebok Classic x Solebox Club C85</a></li>
+                                <li><a href="#">Nike Air Hyperadapt</a></li>
+                                <li><a href="#">Adidas Gazelle</a></li>
+                                <li><a href="#">Nike Free Flyknit</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Year</a></li>
+                                <li><a href="#">Styles</a></li>
+                                <li><a href="#">Materials</a></li>
+                                <li><a href="#">Shape</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Order by
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Date ascending</a></li>
+                                <li><a href="#">Date descending</a></li>
+                                <li><a href="#">Likes ascending</a></li>
+                                <li><a href="#">Likes descending</a></li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </div>
@@ -210,7 +254,7 @@
 
     <section>
         <div class="container">
-
+            <h2>My Pictures</h2>
             <div class="row rowBox">
 
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
@@ -221,6 +265,7 @@
                         <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
+
                         <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-comment"></span>
                         </a>
@@ -360,6 +405,7 @@
                         <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
                     </a>
                     <div class="likeAndCommentBox">
+
                         <a href="viewPicByClick.html">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
@@ -369,22 +415,10 @@
                         <p>123 Likes</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-                        <a href="viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
-                        <a href="viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
+
 
 @endsection

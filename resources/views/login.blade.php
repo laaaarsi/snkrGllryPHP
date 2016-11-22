@@ -19,7 +19,7 @@
                             <input type="password" class="form-control" id="loginPassword" placeholder="Password">
                         </div>
                         <div class=" col-xs-12 loginButtonBox">
-                            <a href="index.html" class="btn " role="button">Login</a>
+                            <a href="/" class="btn " role="button">Login</a>
                         </div>
                     </form>
                 </div>

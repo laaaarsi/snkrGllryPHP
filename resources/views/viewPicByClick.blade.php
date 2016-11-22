@@ -13,7 +13,7 @@
                         <img class="img-responsive center-block " src="../img/IMG_5109.jpg" height="750" width="500">
                     </figure>
                     <div class="likeAndCommentBox">
-                        <a href="viewPicByClick.html">
+                        <a href="/viewPicByClick">
                             <span class="glyphicon glyphicon-thumbs-up"></span>
                         </a>
 

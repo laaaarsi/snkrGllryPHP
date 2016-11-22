@@ -16,12 +16,12 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contest.html">Contest</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/contest">Contest</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/profile">Profile</a></li>
                 </ul>
             </div>
         </div>

@@ -16,6 +16,7 @@ class ComposerStaticInit4558931dccab2e0b95096258b98acad1
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -85,6 +86,7 @@ class ComposerStaticInit4558931dccab2e0b95096258b98acad1
         ),
         'C' => 
         array (
+            'Collective\\Html\\' => 16,
             'ClassPreloader\\' => 15,
             'Carbon\\' => 7,
         ),
@@ -221,6 +223,10 @@ class ComposerStaticInit4558931dccab2e0b95096258b98acad1
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'Collective\\Html\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravelcollective/html/src',
+        ),
         'ClassPreloader\\' => 
         array (
             0 => __DIR__ . '/..' . '/classpreloader/classpreloader/src',
@@ -278,11 +284,11 @@ class ComposerStaticInit4558931dccab2e0b95096258b98acad1
     );
 
     public static $classMap = array (
-        'CreateCommentTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_28_164523_create_comment_table.php',
-        'CreateImageTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_25_070700_create_image_table.php',
+        'CreateCommentTable' => __DIR__ . '/../..',
+        'CreateImageTable' => __DIR__ . '/../..',
+        'CreateLikeTable' => __DIR__ . '/../..',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUserTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_25_070634_create_user_table.php',
-        'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
@@ -809,7 +815,7 @@ class ComposerStaticInit4558931dccab2e0b95096258b98acad1
         'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => __DIR__ . '/..' . '/sebastian/recursion-context/src/InvalidArgumentException.php',
         'SebastianBergmann\\ResourceOperations\\ResourceOperations' => __DIR__ . '/..' . '/sebastian/resource-operations/src/ResourceOperations.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
-        'Test1' => __DIR__ . '/../..' . '/database/migrations/2016_11_24_174652_test1.php',
+        'Test123' => __DIR__ . '/../..' . '/database/migrations/2016_12_18_183340_test123.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
     );

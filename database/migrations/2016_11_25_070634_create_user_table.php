@@ -15,7 +15,15 @@ class CreateUserTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('username');
+            //$table->string('registered');
+            $table->string('location');
+            //www.instagram.com/insertUsernameHere
+            $table->string('instagram')->nullable();
+            //Likes werden über Query abgefragt
+            //Pictures werden ebenfalls über Query abgefragt
+            //Profilbild muss eben hochgeladen werden es sollte aber auch ein Default Bild geben
+            $table->string('about')->nullable();
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
@@ -30,6 +38,6 @@ class CreateUserTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('users');
     }
 }

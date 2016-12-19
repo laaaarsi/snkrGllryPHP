@@ -26,16 +26,16 @@
                 <div class="col-xs-12 col-sm-9">
 
                     <label for="username">Username: </label>
-                    <span id="username">laaaarsi</span><br>
+                    <span id="username">{{Auth::user()->username}}</span><br>
 
                     <label for="lastLogin">Registred since: </label>
-                    <span id="lastLogin">12.11.2016</span><br>
+                    <span id="lastLogin"></span><br>
 
                     <label for="location">Location: </label>
-                    <span id="location">Konstanz</span><br>
+                    <span id="location">{{Auth::user()->location}}</span><br>
 
                     <label for="instagram">Instagram: </label>
-                    <span id="instagram">laaaarsi</span><br>
+                    <span id="instagram">{{Auth::user()->instagram}}</span><br>
 
                     <label for="likes">Total likes: </label>
                     <span id="likes">1000</span>
@@ -47,8 +47,9 @@
                     <div class="col-xs-12">
                         <h2>About me</h2>
 
-                        <p>Hi my name is Lars and I'm one of the creators of this website and a sneaker-enthusiast since
-                            2013.</p>
+                        <!--Wenn leer dann Standardtext-->
+
+                        {{Auth::user()->about}}
                     </div>
                 </article>
 

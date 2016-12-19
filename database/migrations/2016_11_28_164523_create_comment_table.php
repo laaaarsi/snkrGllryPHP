@@ -13,7 +13,19 @@ class CreateCommentTable extends Migration
      */
     public function up()
     {
-        //
+
+        Schema::create('comments', function (Blueprint $table) {
+            $table->increments('id');
+            //FK auf User
+            $table->integer('userId');
+            //FK auf Image
+            $table->integer('imageId');
+            $table->string('comment');
+            $table->rememberToken();
+            $table->timestamps();
+
+
+        });
     }
 
     /**
@@ -23,6 +35,6 @@ class CreateCommentTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('comments');
     }
 }

@@ -27,6 +27,7 @@ Route::get('/login', function () {
     return view('login');
 });
 
+
 Route::get('/news', function () {
     return view('news');
 });
@@ -38,3 +39,17 @@ Route::get('/profile', function () {
 Route::get('/viewPicByClick', function () {
     return view('viewPicByClick');
 });
+
+
+
+Route::get('/login',['uses'=>'UsersController@index']);
+Route::get('/login/create',['uses'=>'UsersController@create']);
+Route::post('/login',['uses'=>'UsersController@store']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

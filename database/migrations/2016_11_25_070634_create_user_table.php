@@ -22,7 +22,7 @@ class CreateUserTable extends Migration
             $table->string('instagram')->nullable();
             //Likes werden über Query abgefragt
             //Pictures werden ebenfalls über Query abgefragt
-            //Profilbild muss eben hochgeladen werden es sollte aber auch ein Default Bild geben
+            //Profilbild muss ebenfalls hochgeladen werden es sollte aber auch ein Default Bild geben
             $table->string('about')->nullable();
             $table->string('email')->unique();
             $table->string('password');

@@ -27,6 +27,7 @@ class CreateImageTable extends Migration
             $table->integer('userId');
             $table->rememberToken();
             $table->timestamps();
+           // $table->foreign('id')->references('id')->on('users');
         });
     }
 

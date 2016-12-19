@@ -21,6 +21,9 @@ class CreateLikeTable extends Migration
             $table->integer('imageId');
             $table->rememberToken();
             $table->timestamps();
+
+            //$table->foreign('userId')->references('id')->on('images');
+            //$table->foreign('imageId')->references('id')->on('users');
         });
     }
 

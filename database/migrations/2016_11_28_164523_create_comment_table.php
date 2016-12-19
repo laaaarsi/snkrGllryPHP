@@ -24,6 +24,9 @@ class CreateCommentTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
+            //$table->foreign('userId')->references('id')->on('images');
+            //$table->foreign('imageId')->references('id')->on('users');
+
 
         });
     }

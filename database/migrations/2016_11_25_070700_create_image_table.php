@@ -14,22 +14,29 @@ class CreateImageTable extends Migration
     public function up()
     {
         Schema::create('images', function (Blueprint $table) {
+
             $table->increments('id');
-            $table->string('brand');
-            $table->string('color');
-            $table->string('style');
-            $table->string('material');
-            $table->string('shape');
-            $table->integer('year');
+            $table->integer('user_id')->unsigned();
+            $table->string('brand')->nullable();;
+            $table->string('color')->nullable();;
+            $table->string('style')->nullable();;
+            $table->string('material')->nullable();;
+            $table->string('shape')->nullable();;
+            $table->integer('year')->nullable();;
             $table->string('desc');
             $table->string('path');
             //ForeignKey auf User Table
             $table->integer('userId');
             $table->rememberToken();
             $table->timestamps();
-           // $table->foreign('id')->references('id')->on('users');
+
+            //Foreignkey auf Users
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
         });
     }
+
+
 
     /**
      * Reverse the migrations.

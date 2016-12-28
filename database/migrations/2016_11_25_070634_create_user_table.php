@@ -15,9 +15,9 @@ class CreateUserTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('username');
+            $table->string('username')->unique();
             //$table->string('registered');
-            $table->string('location');
+            $table->string('location')->nullable();
             //www.instagram.com/insertUsernameHere
             $table->string('instagram')->nullable();
             //Likes werden über Query abgefragt
@@ -28,6 +28,8 @@ class CreateUserTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+
+
         });
     }
 

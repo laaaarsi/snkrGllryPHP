@@ -29,7 +29,7 @@
                     <span id="username">{{Auth::user()->username}}</span><br>
 
                     <label for="lastLogin">Registred since: </label>
-                    <span id="lastLogin"></span><br>
+                    <span id="lastLogin">{{Auth::user()->created_at}}</span><br>
 
                     <label for="location">Location: </label>
                     <span id="location">{{Auth::user()->location}}</span><br>
@@ -55,7 +55,7 @@
 
                 <div class="col-xs-12">
                     <h2>Shoes i own</h2>
-
+                    <h3>Dies muss irgendwie erzeugt werden oder vorerst komplett rausgenommen werden</h3>
                     <ul>
                         <li>Asics GLV Mint</li>
                         <li>Nike AirMax</li>

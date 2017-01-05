@@ -1,44 +1,16 @@
 @extends('layouts.default')
 
 @section('content')
-    <h1 class="well well-lg">Upload Image</h1>
-    <div class="container">
-        @if(isset($success))
-            <div class="alert alert-success"> {{$success}} </div>
-        @endif
-        {!! Form::open(['action'=>'ImagesController@store', 'files'=>true]) !!}
-
-        <div class="form-group">
-            {!! Form::label('title', 'Title:') !!}
-            {!! Form::text('title', null, ['class'=>'form-control']) !!}
-        </div>
+<h1>Users</h1>
 
 
-
-    <div class="form-group">
-        {!! Form::label('desc', 'Description:') !!}
-        {!! Form::textarea('desc', null, ['class'=>'form-control', 'rows'=>5] ) !!}
+@foreach($users as $user)
+    <div>
+        <a href="/users/{{$user->id}}">{{$user->id}}</a>
+        {{$user->username}}
+        {{$user->location}}
     </div>
 
-    <div class="form-group">
-        {!! Form::label('path', 'Choose an image') !!}
-        {!! Form::file('path') !!}
-    </div>
-
-
-
-    <div class="form-group">
-        {!! Form::submit('Save', array( 'class'=>'btn form-control' )) !!}
-    </div>
-
-    {!! Form::close() !!}
-    <div class="alert-warning">
-        @foreach( $errors->all() as $error )
-            <br> {{ $error }}
-        @endforeach
-    </div>
-    </div>
-
-
+    @endforeach
 
 @endsection

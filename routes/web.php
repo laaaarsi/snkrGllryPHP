@@ -40,6 +40,10 @@ Route::get('/viewPicByClick', function () {
     return view('viewPicByClick');
 });
 
+Route::get('picture/{id}','ImagesController@show' );
+
+Route::post('picture/{id}/comments','CommentsController@store');
+
 
 //UserControllerTest
 

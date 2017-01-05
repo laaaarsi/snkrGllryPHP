@@ -27,11 +27,27 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    /*A user can have many comments*/
+
+    public function comments(){
+        return $this->hasMany('App\Comment');
+    }
+
     /*A user can have many images*/
 
     public function images(){
         return $this->hasMany('App\Image');
     }
+
+    /*A user can have many likes*/
+
+    public function likes(){
+        return $this->hasMany('App\Like');
+    }
+
+
+
+
 
 
 }

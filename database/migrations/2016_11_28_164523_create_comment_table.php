@@ -17,15 +17,14 @@ class CreateCommentTable extends Migration
         Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
             //FK auf User
-            $table->integer('userId');
+            $table->integer('user_id')->unsigned();
             //FK auf Image
-            $table->integer('imageId');
-            $table->string('comment');
+            $table->integer('image_id')->unsigned();
+            $table->text('comment');
             $table->rememberToken();
             $table->timestamps();
 
-            //$table->foreign('userId')->references('id')->on('images');
-            //$table->foreign('imageId')->references('id')->on('users');
+
 
 
         });

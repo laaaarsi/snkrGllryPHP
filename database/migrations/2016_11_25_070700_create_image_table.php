@@ -16,22 +16,21 @@ class CreateImageTable extends Migration
         Schema::create('images', function (Blueprint $table) {
 
             $table->increments('id');
+            //FK auf User durch Eloquent
             $table->integer('user_id')->unsigned();
-            $table->string('brand')->nullable();;
-            $table->string('color')->nullable();;
-            $table->string('style')->nullable();;
-            $table->string('material')->nullable();;
-            $table->string('shape')->nullable();;
-            $table->integer('year')->nullable();;
-            $table->string('desc');
-            $table->string('path');
-            //ForeignKey auf User Table
-            $table->integer('userId');
+            //Es gibt noch einen Namen für Schuhe sowie ein Modell
+            $table->string('brand')->nullable();
+            $table->string('color')->nullable();
+            $table->string('style')->nullable();
+            $table->string('material')->nullable();
+            $table->string('shape')->nullable();
+            $table->integer('year')->nullable();
+            $table->string('desc')->nullable();
+            $table->string('path')->nullable();
             $table->rememberToken();
             $table->timestamps();
 
-            //Foreignkey auf Users
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
 
         });
     }

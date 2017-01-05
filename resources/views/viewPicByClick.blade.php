@@ -40,14 +40,15 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-6">
-                    <form>
+                    <form method="POST" action="/viewPicByClick/{{ $image->id }}/comments">
 
                         <div class="form-group">
                             <label for="descriptionTextarea">Comment:</label>
-                            <textarea class="form-control" id="descriptionTextarea"
-                                      rows="3"></textarea>
+                            <textarea class="form-control" id="descriptionTextarea" name="comment" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Post</button>
+                        <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
 
 
                     </form>

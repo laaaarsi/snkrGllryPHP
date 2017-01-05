@@ -16,14 +16,13 @@ class CreateLikeTable extends Migration
         Schema::create('likes', function (Blueprint $table) {
             $table->increments('id');
             //FK auf User
-            $table->integer('userId');
+            $table->integer('user_id');
             //FK auf Image
-            $table->integer('imageId');
+            $table->integer('image_id');
             $table->rememberToken();
             $table->timestamps();
 
-            //$table->foreign('userId')->references('id')->on('images');
-            //$table->foreign('imageId')->references('id')->on('users');
+
         });
     }
 

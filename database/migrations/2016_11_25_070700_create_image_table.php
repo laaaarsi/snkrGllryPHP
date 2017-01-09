@@ -18,7 +18,7 @@ class CreateImageTable extends Migration
             $table->increments('id');
             //FK auf User durch Eloquent
             $table->integer('user_id')->unsigned();
-            //Es gibt noch einen Namen für Schuhe sowie ein Modell
+            //Es gibt noch einen Namen für Schuhe sowie ein Modelld
             $table->string('brand')->nullable();
             $table->string('color')->nullable();
             $table->string('style')->nullable();

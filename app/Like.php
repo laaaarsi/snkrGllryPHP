@@ -13,4 +13,11 @@ class Like extends Model
     public function image(){
         return $this->belongsTo(Image::class);
     }
+
+
+    protected $fillable = [
+        'user_id', 'image_id', 'counter'
+    ];
+
+
 }

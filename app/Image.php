@@ -31,12 +31,12 @@ class Image extends Model
 
         protected $table = 'images';
 
-  /*  protected $fillable =[
+    protected $fillable =[
 
-        //brand, color, style, material, shape, year, desc, path
-        desc, path
+        'brand', 'color', 'style', 'material', 'shape', 'year', 'desc', 'user_id'
 
-    ];*/
+
+    ];
 
 
 

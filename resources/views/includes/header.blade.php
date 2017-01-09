@@ -84,9 +84,7 @@
                         <li><a href={{url('/contest')}}>Contest</a></li>
                         <li><a href={{url('/news')}}>News</a></li>
                         <li><a href={{url('/about')}}>About</a></li>
-                        <li><a href={{url('/about')}}>About</a></li>
-                        <!--Dieses Profile muss dem des eingeloggten Users entsprechen-->
-                        <li><a href={{url('/profile')}}>Profile</a></li>
+                        <li><a href="/user/{{Auth::user()->id}}">Profile</a></li>
                         <li>
 
                             <a href="{{ url('/logout') }}"

@@ -13,11 +13,8 @@ use App\Http;
 class UsersController extends Controller
 {
     public function index()
+
     {
-        //Hier werden zunächst alle User gespeichert
-        $users = User::all();
-        //Hier werden die in der Variable users gespeicherten User an die view Test übergeben
-        return view('test', compact('users'));
 
     }
 
@@ -27,7 +24,7 @@ class UsersController extends Controller
 
         //web.php route
         $user = User::find($id);
-        return view('show', compact('user'));
+        return view('profile', compact('user'));
 
     }
 

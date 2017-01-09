@@ -26,16 +26,16 @@
                 <div class="col-xs-12 col-sm-9">
 
                     <label for="username">Username: </label>
-                    <span id="username">{{Auth::user()->username}}</span><br>
+                    <span id="username">{{$user->username}}</span><br>
 
                     <label for="lastLogin">Registred since: </label>
-                    <span id="lastLogin">{{Auth::user()->created_at}}</span><br>
+                    <span id="lastLogin">{{$user->created_at}}</span><br>
 
                     <label for="location">Location: </label>
-                    <span id="location">{{Auth::user()->location}}</span><br>
+                    <span id="location">{{$user->location}}</span><br>
 
                     <label for="instagram">Instagram: </label>
-                    <span id="instagram">{{Auth::user()->instagram}}</span><br>
+                    <span id="instagram">{{$user->instagram}}</span><br>
 
                     <label for="likes">Total likes: </label>
                     <span id="likes">1000</span>
@@ -47,21 +47,29 @@
                     <div class="col-xs-12">
                         <h2>About me</h2>
 
-                        <!--Wenn leer dann Standardtext-->
+                        {{$user->about}}
 
-                        {{Auth::user()->about}}
                     </div>
                 </article>
 
                 <div class="col-xs-12">
                     <h2>Shoes i own</h2>
-                    <h3>Dies muss irgendwie erzeugt werden oder vorerst komplett rausgenommen werden</h3>
+
                     <ul>
-                        <li>Asics GLV Mint</li>
-                        <li>Nike AirMax</li>
-                        <li>Adidas ZX Flux</li>
-                        <li>Other</li>
-                    </ul>
+
+                    @foreach($user->images as $image)
+
+
+
+
+
+                        <li><a href="/picture/{{$image->id}}">{{$image->year}} {{$image->brand}}</a></li>
+
+
+                    @endforeach
+                        </ul>
+
+
                 </div>
 
             </div>
@@ -258,164 +266,24 @@
             <h2>My Pictures</h2>
             <div class="row rowBox">
 
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
+                @foreach($user->images as $image)
 
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
-                    <a href="/viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
-                    <a href="/viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
-                    <a href="/viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
-                    </div>
 
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
+                        <a href="/picture/{{$image->id}}">
+                            <img class="img-responsive" src="../{{$image->path}}" alt="">
                         </a>
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
+                        <div class="likeAndCommentBox">
+                            <a href="/picture/">
+                                <span class="glyphicon glyphicon-thumbs-up"></span>
+                            </a>
+                            <a href="/picture/">
+                                <span class="glyphicon glyphicon-comment"></span>
+                            </a>
+                            <p>{{$image->created_at}}</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5109.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  thumb picBox">
-                    <a href="/viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5059.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb picBox">
-                    <a href="/viewPicByClick.html">
-                        <img class="img-responsive" src="../img/IMG_5087.jpg" alt="">
-                    </a>
-                    <div class="likeAndCommentBox">
-
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
-                        <a href="/viewPicByClick.html">
-                            <span class="glyphicon glyphicon-comment"></span>
-                        </a>
-                        <p>123 Likes</p>
-                    </div>
-                </div>
+                @endforeach
 
             </div>
         </div>

@@ -4,13 +4,8 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLikeTable extends Migration
+class CreateLikesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('likes', function (Blueprint $table) {
@@ -19,6 +14,7 @@ class CreateLikeTable extends Migration
             $table->integer('user_id');
             //FK auf Image
             $table->integer('image_id');
+            $table->integer('counter')->unsigned();
             $table->rememberToken();
             $table->timestamps();
 
@@ -35,4 +31,5 @@ class CreateLikeTable extends Migration
     {
         Schema::drop('likes');
     }
+
 }

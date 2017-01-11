@@ -22,13 +22,7 @@
             <ul class="nav navbar-nav footer-nav">
 
                 <li><a href="/contact">Contact</a></li>
-                <li>
 
-
-                    <a href="https://www.instagram.com/laaaarsi/?ref=badge" class="ig-b- ig-b-v-24"><img
-                                src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram"/></a>
-
-                </li>
                 <li><a href="/impressum">Impressum</a></li>
 
                 <!--<li>
@@ -41,6 +35,22 @@
             </ul>
         </div>
     </div>
+
+    <div class="container">
+        <div class="col-xs-12 row-centered" style="margin-bottom: 0.5%;margin-top: 0.7%">
+            <a href="https://www.instagram.com/laaaarsi/?ref=badge" class="ig-b- ig-b-v-24"><img
+                        src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram"/></a>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-xs-12 row-centered" style="margin-left:23px;margin-bottom: 0.5%;margin-top: 0.5%">
+            <a id="823949" href="http://www.xn--geflltmirbutton-2kb.de">www.gefälltmirbutton.de</a><script src="http://www.gefälltmirbutton.de/likebutton.php?u=https%3A%2F%2Fwww.facebook.com%2FSnkrGllry-245322479225104%2F&h=30&w=150&l=button_count&s=border%3Anone%3B+overflow%3Ahidden%3B+width%3A150px%3B+height%3A30px%3B&i=823949&sf=true&st=false&sh=false&typ=1" type="text/javascript"></script>
+        </div>
+    </div>
+
+
+
 
 
 

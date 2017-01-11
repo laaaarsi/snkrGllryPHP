@@ -3,13 +3,15 @@
 Route::get('/', 'ImagesController@index');
 Route::get('/asc', 'ImagesController@sortAsc');
 Route::get('/desc', 'ImagesController@sortDesc');
+
 //Route::post('store', 'ImagesController@store');
 Route::post('imageUpload', 'ImagesController@imageUpload');
 
 
 
 Route::get('picture/{id}','ImagesController@show' );
-Route::post('picture/{id}/comments','CommentsController@store' );
+//Route::post('picture/{id}/comments','CommentsController@store' );
+Route::post('addComment','CommentsController@store2' );
 
 
 
@@ -62,6 +64,9 @@ Route::get('/home', 'HomeController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+
+
 
 
 

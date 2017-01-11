@@ -13,9 +13,14 @@ class ImagesController extends Controller
     public function index(){
 
         $images = Image::all();
+
+
         return view('index', compact('images'));
 
     }
+
+
+
 
 
     public function show($id)    {
@@ -26,6 +31,7 @@ class ImagesController extends Controller
 
 
     }
+
 
 
     public function store(Request $request)    {
@@ -46,11 +52,14 @@ class ImagesController extends Controller
 
 
 
-        $this->validate($request,[
-            'path'=>'required|mimes:jpg,jpeg,png'
-        ]);
+
 
         $picture = $request->path;
+
+
+        $this->validate($request, [
+            'path' => 'dimensions:max_width=29000,max_height=29000'
+        ]);
 
         $nameZumSpeichern = $picture->getClientOriginalName();
 
@@ -66,7 +75,7 @@ class ImagesController extends Controller
         $bild->year= $request->year;
         $bild->desc= $request->desc;
         $bild->path= 'img/'.$nameZumSpeichern;
-        $picture->resize(200,200);
+
         $bild->save();
 
         return back();
@@ -87,6 +96,8 @@ class ImagesController extends Controller
 
     }
 
+
+
     public function sortDesc(){
 
         $images= Image::all()->sortByDesc('created_at');
@@ -94,6 +105,9 @@ class ImagesController extends Controller
         return view('index', compact('images'));
 
     }
+
+
+
 
 
 }

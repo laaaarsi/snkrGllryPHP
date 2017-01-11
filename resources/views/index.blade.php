@@ -207,7 +207,7 @@
 
 
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Model
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="showBrands">Model
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 @foreach($images as $brand)

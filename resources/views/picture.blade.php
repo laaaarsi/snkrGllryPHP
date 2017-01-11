@@ -13,16 +13,17 @@
                 <div class="row-centered col-xs-12 col-sm-6">
 
 
-                        <img class="img-responsive center-block" src="../{{$image->path}}" height="300">
+                    <img class="img-responsive center-block" src="../{{$image->path}}" height="300" width="300">
 
                     <div class="likeAndCommentBox">
 
                         @if (Auth::guest())
-                            <p>Please <a href={{url('/login')}}>Login</a> or <a href={{url('/register')}}>Register</a> to like this picture</p>
+                            <p>Please <a href={{url('/login')}}>Login</a> or <a href={{url('/register')}}>Register</a>
+                                to like this picture</p>
                         @else
-                        <a href="/viewPicByClick">
-                            <span class="glyphicon glyphicon-thumbs-up"></span>
-                        </a>
+                            <a href="/viewPicByClick">
+                                <span class="glyphicon glyphicon-thumbs-up"></span>
+                            </a>
                         @endif
 
                         <p>123 Likes</p>
@@ -47,12 +48,13 @@
                     <span id="description">{{$image->desc}}</span><br>
                     <label for="comment">Comments: </label>
                     <span id="comment">
-                         <ul>
+                         <ul id="commentLoop">
                             @foreach($image->comments as $comment)
                                 <!--Es muss ein Link auf Username werden!-->
                                     <li><a href="/user/{{$comment->user->id}}">{{$comment->user->username}}</a>: {{$comment->comment}}</li>
                                 @endforeach
                         </ul>
+
                     </span>
 
                 </div>
@@ -63,13 +65,19 @@
                 @if (Auth::guest())
 
                     <div class="col-xs-12 col-sm-6">
-                        <p>Please <a href={{url('/login')}}>Login</a> or <a href={{url('/register')}}>Register</a> to write a comment</p>
+                        <p>Please <a href={{url('/login')}}>Login</a> or <a href={{url('/register')}}>Register</a> to
+                            write a comment</p>
                     </div>
 
 
                 @else
+
+
                     <div class="col-xs-12 col-sm-6">
-                        <form method="post" action="/picture/{{$image->id}}/comments">
+                    <!--<form method="post" action="/picture/{{$image->id}}/comments">-->
+                        <form id="commentForm">
+
+
                             {{csrf_field()}}
 
                             <div class="form-group">
@@ -82,9 +90,13 @@
                             <input type="hidden" name="user_id" value="{{Auth::user()->id}}">
 
                             <div class="form-group">
-                                <input type="submit" class="btn" value="Send">
                             </div>
+                            <input type="submit" class="btn" id="sendButton" value="Send">
+
+
                         </form>
+
+
                     </div>
 
                 @endif
@@ -93,6 +105,45 @@
             </div>
         </div>
     </section>
+
+    <script>
+
+        $('#commentForm').on('submit', function (e) {
+
+            e.preventDefault();
+            $.ajax({
+
+                type: "POST",
+                url: '/addComment',
+                dataType:'json',
+                data: $(this).serialize(),
+                error: function(e) {
+                    console.log(e.responseText);
+                    console.log('success');
+                },
+                success :function(response) {
+                    console.log(response.comment);
+                    $('#commentLoop').append('<li><a href="/user/'+response.user_id+'"></a>: </li>');
+
+
+                    console.log(response);
+
+
+
+
+
+
+                }
+
+            })
+
+
+
+        });
+
+    </script>
+
+
 
 
 
